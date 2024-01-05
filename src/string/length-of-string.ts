@@ -11,4 +11,4 @@ type LengthOfString<S extends string> = Split<S, "">["length"];
 type x = LengthOfString<"OOPS">;
 
 const a: x = 4; // This is fine
-const b: x = 5; // This is not fine
+// const b: x = 5; // This is not fine
