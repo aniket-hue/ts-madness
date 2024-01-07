@@ -1,3 +1,4 @@
-const lengthOfString: LengthOfString<"hello"> = 5;
-const reverseOfString: ReverseTheString<"hello"> = "olleh";
-const isPalindrome: IfAStringIsPalindrome<"hello"> = false;
+const lengthOfString: String.LengthOfString<"hello"> = 5;
+const reverseOfString: String.ReverseTheString<"hello"> = "olleh";
+const isPalindrome: String.IfAStringIsPalindrome<"hello"> = false;
+const substring: String.Substring<"hello", 3> = "hel";
