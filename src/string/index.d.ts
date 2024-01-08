@@ -12,4 +12,8 @@ namespace String {
     : S extends `${infer T}${infer U}`
     ? `${T}${Substring<U, Math.Subtract<End, 1>>}`
     : "";
+
+  type DoesStringExistInAnotherString<S extends string, T extends string> = S extends `${infer U}${T}${infer V}`
+    ? true
+    : false;
 }
